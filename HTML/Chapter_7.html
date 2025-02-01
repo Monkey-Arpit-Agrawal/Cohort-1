@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center; /* Changed from 'end' to 'center' */
+            height: 100vh; /* Ensure the body takes the full viewport height */
+        }
+        form {
+            background-color: antiquewhite;
+            padding: 20px; /* Optional: Adds some padding inside the form */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form>
+            <fieldset>
+                <label for="phone">Phone No</label>
+                <input id="phone" type="tel" name="phone" pattern="[0-9]{10}"> <br /> <br />
+                <textarea name="" id="" rows="10">Type The Text Here</textarea> <br /> <br />
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8}">
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
